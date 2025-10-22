@@ -14,13 +14,11 @@ default = []
 # This feature allows features to be disabled when the Core is running on mobile.
 mobile = []
 # This feature controls whether the Spacedrive Core contains functionality which requires FFmpeg.
-ai     = ["dep:sd-ai"]
 ffmpeg = ["sd-core-heavy-lifting/ffmpeg", "sd-media-metadata/ffmpeg"]
 heif   = ["sd-images/heif"]
 
 [dependencies]
 # Inner Core Sub-crates
-sd-core-cloud-services   = { path = "./crates/cloud-services" }
 sd-core-file-path-helper = { path = "./crates/file-path-helper" }
 sd-core-heavy-lifting    = { path = "./crates/heavy-lifting" }
 sd-core-indexer-rules    = { path = "./crates/indexer-rules" }
@@ -29,7 +27,6 @@ sd-core-sync             = { path = "./crates/sync" }
 
 # Spacedrive Sub-crates
 sd-actors         = { path = "../crates/actors" }
-sd-ai             = { path = "../crates/ai", optional = true }
 sd-crypto         = { path = "../crates/crypto" }
 sd-ffmpeg         = { path = "../crates/ffmpeg", optional = true }
 sd-file-ext       = { path = "../crates/file-ext" }
@@ -67,7 +64,6 @@ reqwest             = { workspace = true, features = ["json", "native-tls-vendor
 rmp-serde           = { workspace = true }
 rmpv                = { workspace = true }
 rspc                = { workspace = true, features = ["alpha", "axum", "chrono", "unstable", "uuid"] }
-sd-cloud-schema     = { workspace = true }
 serde               = { workspace = true, features = ["derive", "rc"] }
 serde_json          = { workspace = true }
 specta              = { workspace = true }

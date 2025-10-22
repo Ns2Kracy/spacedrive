@@ -39,11 +39,6 @@ missing_errors_doc      = "allow"
 module_name_repetitions = "allow"
 
 [dependencies]
-# Core Spacedrive Sub-crates
-sd-core-cloud-services = { path = "../cloud-services" }
-
-# Spacedrive Sub-crates
-sd-cloud-schema = { workspace = true }
 sd-crypto       = { path = "../../../crates/crypto" }
 
 

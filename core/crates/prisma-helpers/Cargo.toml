@@ -9,7 +9,6 @@ repository.workspace = true
 
 [dependencies]
 # Spacedrive Sub-crates
-sd-cloud-schema = { workspace = true }
 sd-prisma       = { path = "../../../crates/prisma" }
 sd-utils        = { path = "../../../crates/utils" }
 

@@ -19,9 +19,6 @@ repository   = "https://github.com/spacedriveapp/spacedrive"
 rust-version = "1.81"
 
 [workspace.dependencies]
-# First party dependencies
-sd-cloud-schema = { git = "https://github.com/spacedriveapp/cloud-services-schema", rev = "515ba740ea" }
-
 # Third party dependencies used by one or more of our crates
 anyhow              = "1.0.94"
 async-channel       = "2.3"
@@ -124,13 +121,12 @@ strip           = "none"
 [profile.dev-debug]
 inherits = "dev"
 # Enables debugger
-codegen-units   = 256
-debug           = "full"
-incremental     = true
-lto             = "off"
-opt-level       = 0
-split-debuginfo = "none"
-strip           = "none"
+codegen-units = 256
+debug         = "full"
+incremental   = true
+lto           = "off"
+opt-level     = 0
+strip         = "none"
 
 # Set the settings for build scripts and proc-macros.
 [profile.dev.build-override]

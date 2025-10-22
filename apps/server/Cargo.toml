@@ -7,9 +7,8 @@ license.workspace    = true
 repository.workspace = true
 
 [features]
-ai-models = ["sd-core/ai"]
-assets    = []
-default   = []
+assets  = []
+default = []
 
 [dependencies]
 # Spacedrive Sub-crates

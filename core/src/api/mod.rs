@@ -34,7 +34,6 @@ mod keys;
 mod labels;
 mod libraries;
 pub mod locations;
-mod models;
 mod nodes;
 pub mod notifications;
 mod p2p;
